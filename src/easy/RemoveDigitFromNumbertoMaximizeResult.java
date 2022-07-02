@@ -1,8 +1,6 @@
 package easy;
 
-import java.math.BigInteger;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -27,7 +25,6 @@ public class RemoveDigitFromNumbertoMaximizeResult {
         for(Integer j : index){
             StringBuilder sb = new StringBuilder(number);
             sb.deleteCharAt(j);
-            BigInteger temp = new BigInteger(sb.toString());
             if(max.toString().compareTo(sb.toString()) < 0){
                 max = sb;
             }
