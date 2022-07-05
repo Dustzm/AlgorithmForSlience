@@ -32,7 +32,7 @@ public class ReversePairsInArray {
         int t = 0;
 
         while(i <= mid && j <= right){
-            if(nums[i] < nums[j]){
+            if(nums[i] <= nums[j]){
                 temp[t++] = nums[i++];
             }else {
                 count += mid - i + 1;
